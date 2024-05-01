@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function fetchEarthquakeData(startDate, endDate) {
     const url = `https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=${startDate}&endtime=${endDate}&minmagnitude=1`;
     
-    fetch(https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=${startDate}&endtime=${endDate}&minmagnitude=1)
+    fetch(url)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
